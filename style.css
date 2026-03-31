@@ -1,3 +1,9 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-main: #F4F1ED;        /* tło strony */
   --bg-card: #EAE4DD;        /* karty */
@@ -88,7 +94,7 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-#Hero-sec {
+#Home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,12 +143,41 @@ h1, h2, h3 {
 }
 
 
+/* =============
+    ABOUT ME
+=============== */
+
+.about-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+  background-color: var(--bg-card);
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-soft);
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
+
 /* ==============
    PROJECT SECTION
  ===============*/
 
 
-#Projects_sec {
+#Projects {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto 80px auto;
@@ -315,7 +350,7 @@ h1, h2, h3 {
     FOOTER
 ================ */
 
-#footer_sec {
+#Contact {
   text-align: center;
   padding: 16px;
   background-color: var(--bg-card);
@@ -486,7 +521,7 @@ h1, h2, h3 {
 ====================*/
 
 @media (max-width: 1100px) {
-  #Hero-sec {
+  #Home {
     flex-direction: column;
     gap: 36px;
     padding: 40px 0 56px 0;
