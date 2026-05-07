@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritual | Project page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="ham">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="links">
+      <a href="index.html">Home</a>
+      <a href="index.html#Projects">Projects</a>
+      <a href="https://ritual-by-likhachov.netlify.app" target="_blank">Live</a>
+      <a href="https://github.com/SergioAlivero-ww/ritual-habit-tracker" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <main id="journalist-page">
+    <section class="journalist-hero">
+      <p class="project-eyebrow">Support project</p>
+      <h1>Ritual</h1>
+      <p class="journalist-lead">
+        Minimalist habit tracker built with Vanilla JavaScript, practicing state-driven rendering,
+        daily reset logic and responsive UI design.
+      </p>
+
+      <div class="project-links">
+        <a href="https://ritual-by-likhachov.netlify.app" target="_blank">Live Demo</a>
+        <a href="https://github.com/SergioAlivero-ww/ritual-habit-tracker" target="_blank">GitHub</a>
+        
+      </div>
+    </section>
+
+    <section class="journalist-intro">
+      <p>
+        Ritual is a small focused project I built to repeat and strengthen the core mechanics
+        of frontend development: working with state, rendering UI from data, updating arrays,
+        handling events and saving data in localStorage.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+  <h2>Desktop preview</h2>
+    <div class="journalist-gallery">
+    <img src="imgs/R1.png" alt="Ritual desktop interface" />
+    <img src="imgs/R2.png" alt="Ritual completed habits state" />
+  </div>
+</section>
+
+<section class="journalist-section">
+  <h2>Mobile experience</h2>
+  <p>
+    Ritual was designed to feel calm and clean on small screens, with clear spacing,
+    readable typography and comfortable touch targets.
+  </p>
+
+  <div class="journalist-mobile-gallery">
+     <img src="imgs/R3phone.png" alt="Ritual mobile interface" />
+    
+  </div>
+</section>
+
+    <section class="journalist-section">
+      <h2>What it does</h2>
+      <p>
+        Users can add daily habits, mark them as completed, delete them, track daily progress
+    and return the next day with all habits automatically reset.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+      <h2>What made it important for me</h2>
+      <p>
+        After building a larger project, I wanted to slow down and rebuild the fundamentals
+    in a smaller, cleaner form. Ritual helped me practice the same JavaScript mechanisms
+    without hiding behind complexity.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+      <h2>Main challenges</h2>
+      <ul class="journalist-list">
+        <li>Rendering the interface from a single habits array</li>
+    <li>Updating one habit with map() without breaking the rest of the state</li>
+    <li>Removing habits with filter()</li>
+    <li>Persisting data with localStorage</li>
+    <li>Building the automatic daily reset using Date and localStorage</li>
+    <li>Keeping the UI simple, responsive and visually polished</li>
+      </ul>
+    </section>
+  </main>
+
+
+  <section class="journalist-final-cta">
+  <h2>Try Journalist in real use</h2>
+  <p>
+    You can open the live app, add your own habits and test the daily habit tracking flow.
+
+  </p>
+
+  <div class="project-links">
+    <a href="https://ritual-by-likhachov.netlify.app" target="_blank">Open Live App</a>
+    <a href="https://github.com/SergioAlivero-ww/ritual-habit-tracker" target="_blank">View GitHub</a>
+  </div>
+</section>
+
+
+  <footer id="Contact">
+  <p>Serhii Likhachov Pathway</p>
+  <p>© 2025 My Personal Portfolio. All rights reserved.</p>
+
+  <p class="footer-text">
+    If you’d like to talk or build something together, you can find me here:
+  </p>
+
+  <div class="footer-links">
+    <a class="footer-link" href="https://www.linkedin.com/in/serhiilikhachov/?skipRedirect=true">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/SergioAlivero-ww">GitHub</a>
+  </div>
+</footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
