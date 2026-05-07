@@ -431,7 +431,7 @@ h1, h2, h3 {
 }
 
 .ritual-preview-link::after {
-    content: "Try Live Demo";
+    content: "Try Live Demo" !important ;
 }
 
 .project-preview-link:hover::after {
