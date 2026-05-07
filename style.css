@@ -392,7 +392,7 @@ h1, h2, h3 {
 }
 
 
-.project-preview-link {
+.view-link {
   display: block;
   border-radius: 8px;
   overflow: hidden;
@@ -411,6 +411,9 @@ h1, h2, h3 {
 
 .project-preview-link {
   position: relative;
+    display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .project-preview-link::after {
@@ -425,6 +428,10 @@ h1, h2, h3 {
   border-radius: 6px;
   opacity: 0;
   transition: opacity 0.2s ease;
+}
+
+.ritual-preview-link::after {
+    content: "Try Live Demo";
 }
 
 .project-preview-link:hover::after {
