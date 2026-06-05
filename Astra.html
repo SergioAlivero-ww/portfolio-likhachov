@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journalist | Project Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="ham">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="links">
+      <a href="index.html">Home</a>
+      <a href="index.html#Projects">Projects</a>
+      <a href="https://astra-focus-tracker.netlify.app/" target="_blank">Live</a>
+      <a href="https://github.com/SergioAlivero-ww/astra-focus-tracker" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <main id="journalist-page">
+    <section class="journalist-hero">
+      <p class="project-eyebrow">Portfolio Project</p>
+      <h1>Astra</h1>
+      <p class="journalist-lead">
+        Minimalist focus time tracker built with Vanilla JavaScript, featuring timestamp-based timers, daily goals, live progress tracking and localStorage persistence.
+      </p>
+
+      <div class="project-links">
+        <a href="https://astra-focus-tracker.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/SergioAlivero-ww/astra-focus-tracker" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <section class="journalist-intro">
+      <p>
+        Astra is a focused time tracking application I built to better understand frontend application architecture, state management and timer logic.
+
+        The project helped me practice working with more complex state objects, timestamp-based calculations, localStorage persistence and synchronizing multiple parts of the UI with the same application state.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+  <h2>Desktop preview</h2>
+  <div class="journalist-gallery">
+    <img src="imgs/Astra1.png" alt="Astra" />
+    <img src="imgs/Astra2.png" alt="Astra" />
+    <img src="imgs/Astra3.png" alt="Astra" />
+    <img src="imgs/Astra4.png" alt="Astra" />
+    
+  </div>
+</section>
+
+<section class="journalist-section">
+  <h2>Mobile experience</h2>
+  <p>
+    Astra was designed to stay clean and readable on smaller screens, with large timer typography, simple controls and comfortable spacing for mobile use.
+  </p>
+
+  <div class="journalist-mobile-gallery">
+    <img src="imgs/AstraPhone1.png" alt="Journalist mobile editor view" />
+    <img src="imgs/AstraPhone2.png" alt="Journalist mobile detail view" />
+    <img src="imgs/AstraPhone3.png" alt="Journalist mobile entries list" />
+  </div>
+</section>
+
+    <section class="journalist-section">
+      <h2>What it does</h2>
+      <p>
+        Users can create activities, set daily goals, start and pause timers, track live progress, reset activity time and receive a goal achieved message when the daily goal is completed.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+      <h2>What made it important for me</h2>
+      <p>
+        Astra was important because it forced me to understand the difference between stored state, derived state and rendered UI.
+
+        Instead of using a simple todaySeconds++ timer, I chose a timestamp-based approach using Date.now(). This was harder, but it helped me understand how real applications calculate elapsed time and keep UI synchronized with state.
+      </p>
+    </section>
+
+    <section class="journalist-section">
+    <h2>What I learned</h2>
+
+    <ul class="journalist-list">
+        <li>Designing application state before building UI</li>
+        <li>Separating stored state from derived state</li>
+        <li>Building timestamp-based timer systems using Date.now()</li>
+        <li>Synchronizing multiple UI elements with the same state</li>
+        <li>Using localStorage to persist application data</li>
+        <li>Updating interfaces with setInterval and live rendering</li>
+        <li>Working with data-id attributes to connect DOM and state</li>
+        <li>Planning application architecture before adding features</li>
+    </ul>
+    </section>
+
+    <section class="journalist-section">
+    <h2>Main challenges</h2>
+
+    <ul class="journalist-list">
+        <li>Designing a timer system that supports Start, Pause and Resume</li>
+        <li>Calculating elapsed time using timestamps instead of incrementing seconds</li>
+        <li>Keeping Home View and Detail View synchronized in real time</li>
+        <li>Separating stored state from calculated display values</li>
+        <li>Implementing a daily reset system without losing application integrity</li>
+        <li>Synchronizing progress tracking and UI updates across multiple views</li>
+        <li>Persisting application state correctly through localStorage</li>
+    </ul>
+</section>
+  </main>
+
+
+<section class="journalist-final-cta">
+    <h2>Try Astra in real use</h2>
+
+    <p>
+        You can explore the live application, create activities, set daily goals,
+        track time with timestamp-based timers and experience the full workflow
+        of Astra in practice.
+    </p>
+
+    <div class="project-links">
+        <a href="https://astra-focus-tracker.netlify.app" target="_blank">
+            Open Live App
+        </a>
+
+        <a href="https://github.com/SergioAlivero-ww/astra-focus-tracker" target="_blank">
+            View GitHub
+        </a>
+
+        <a href="https://github.com/SergioAlivero-ww/astra-focus-tracker/blob/main/README.md" target="_blank">
+            Read Development Journal
+        </a>
+    </div>
+</section>
+
+
+  <footer id="Contact">
+  <p>Serhii Likhachov Pathway</p>
+  <p>© 2025 My Personal Portfolio. All rights reserved.</p>
+
+  <p class="footer-text">
+    If you’d like to talk or build something together, you can find me here:
+  </p>
+
+  <div class="footer-links">
+    <a class="footer-link" href="https://www.linkedin.com/in/serhiilikhachov/?skipRedirect=true">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/SergioAlivero-ww">GitHub</a>
+  </div>
+</footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
